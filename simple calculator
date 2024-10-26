@@ -1,0 +1,46 @@
+//simple calculator
+#include <stdio.h>
+void add(int a,int b){
+    printf("addition:%d",a+b);
+}
+void sub(int a,int b){
+    printf("Subtraction:%d",a-b);
+}
+void mul(int a,int b){
+    printf("Multiplication:%d",a*b);
+}
+void divi(int a,int b){
+    if(b==0){
+        printf("NA");
+    }else{
+    printf("Division:%d",a/b);
+}}
+void main(){
+    int ch,a,b;
+    printf("1.Addition");
+    printf("\n2.subtraction");
+    printf("\n3.Multiplication");
+    printf("\n4.Division");
+    printf("\nenter a and b");
+    scanf("%d%d",&a,&b);
+    printf("\nEnter your choice:");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1:
+        add(a,b);
+        break;
+        case 2:
+        sub(a,b);
+        break;
+        case 3:
+        mul(a,b);
+        break;
+        case 4:
+        divi(a,b);
+        break;
+        default:
+        printf("what??!!");
+        break;
+    }
+    
+}
